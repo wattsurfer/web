@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Project</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Loading Page Style-->
+    <style>
+      .container {
+        width: 87%;
+      }
+      .loader-wrapper {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #242f3f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999999;
+      }
+      .loader {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        border: 4px solid #fff;
+        animation: loader 2s infinite ease;
+      }
+      .loader-inner {
+        vertical-align: top;
+        display: inline-block;
+        width: 100%;
+        background-color: #fff;
+        animation: loader-inner 2s infinite ease-in;
+      }
+      @keyframes loader {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(180deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        75% {
+          transform: rotate(360deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes loader-inner {
+        0% {
+          height: 0%;
+        }
+        25% {
+          height: 0%;
+        }
+        50% {
+          height: 100%;
+        }
+        75% {
+          height: 100%;
+        }
+        100% {
+          height: 0%;
+        }
+      }
+    </style>
+
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body id="page-top" oncontextmenu="return false;">
+    <!-- loading Page-->
+    <div class="loader-wrapper" id="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html"
+          ><i class="fa fa-home" aria-hidden="false"></i>
+        </a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html"
+                >Our Technology</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="services.html"
+                >Our Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="about.html"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="text-warning">
+          <a
+            class="dropdown-toggle my-2 my-lg-0 rtl text-warning text-decoration-none"
+            id="dropdown09"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            href="#"
+          >
+            English</a
+          >
+          <div
+            class="dropdown-menu dropdown-menu-sm-right"
+            aria-labelledby="dropdown09"
+          >
+            <a class="dropdown-item" href="#">English (Default)</a>
+            <a class="dropdown-item" href="#">Dutch</a>
+            <a class="dropdown-item" href="#">German</a>
+            <a class="dropdown-item" href="#">French</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Home-->
+    <header class="services">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div
+            class="col-8 order-last col-sm-12 order-sm-last col-md-12 order-md-last col-lg-6 order-lg-first text-center text-white"
+          >
+            <h1 class="pb-5">
+              Do you know how much you can save
+            </h1>
+            <a class="btn btn-info js-scroll-trigger" href="#portfolio"
+              >Have a look</a
+            >
+          </div>
+          <div
+            class="col-7 mt-5 order-first col-sm-5 order-sm-first col-md-5 order-md-first col-lg-3 order-lg-last ai-char"
+          >
+            <img
+              class="w-100 ai-robot"
+              src="assets/img/ai-vec.png"
+              alt="Ai-Vector"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Tech-->
+    <section
+      class="offer-forecast text-center text-white"
+      id="forecast-section"
+    >
+      <div class="container">
+        <h5 class="pb-5 mb-5">
+          We offers Load Forecasting, Asset optimization & portfolio
+          optimization services to energy utilities to minimize electricity procurement cost.
+        </h5>
+        <div class="row h-auto justify-content-center align-items-center">
+          <div class="col-sm-12 col-lg-4">
+            <h4 class="pb-4">Forecasting</h4>
+            <p class="text-left">
+              We offer best day-ahead and mid-term load demand forecasting in the market through the power of artificial intellegence. This minimizes unwanted balancing penalties, over-under procurement (or sale) of electricity, and optimizes regulating and emergency capacities.
+			  <!--We offers electricity load forecasting as a service using advanced
+              machine learning within the short-term trading cycle. Customers
+              benefit from cost savings due to lower imbalance penalties, time
+              savings by automating processes and lower IT costs through a cloud
+              set-up. We are experienced in forecasting renewable generation,
+              demand forecasting as well as prosumer forecasting.-->
+            </p>
+          </div>
+          <div class="col-sm-12 col-lg-6 offset-lg-1">
+            <img class="w-100" src="assets/img/forcast.png" alt="Forecasting" />
+          </div>
+        </div>
+        <hr class="text-white" />
+        <div
+          class="row h-auto justify-content-center align-items-center"
+          id="Asset-opt"
+        >
+          <div class="col-sm-12 col-lg-6">
+            <img class="w-100" src="assets/img/turbine.png" alt="Forecasting" />
+          </div>
+          <div class="col-sm-12 col-lg-4 offset-lg-1">
+            <h4 class="pb-4">Asset Optimisation</h4>
+            <p class="text-left">
+             
+			 Through our market knowledge we provide strategies to the small and large power generators to optimize their assets and become future proof in the process of fast energy transition. We also provide insights into providing strategic balacing dispatch services to increase the revenue while supporting the grid stability. 
+			 <!--We offer short-term price and imbalance forecasting services using
+              advanced machine learning. Customers use this information to
+              optimally dispatch flexible energy assets throughout the
+              short-term trading cycle and increase revenues on assets. We have
+              experience in dispatching large-scale batteries, renewable assets
+              and combined heat-and-power units.-->
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div
+          class="row h-auto justify-content-center align-items-center"
+          id="portfolio"
+        >
+          <div class="col-sm-12 col-lg-4">
+            <h4 class="pb-4">Portfolio Optimisation</h4>
+            <p class="text-left mb-5 pb-3">
+              We offer strategic portfolio insights to optimize trading through the EPEX spot exchange, direct forward and futures contracts to minimize the electricity procurement cost. We also aim to maximize utilization of non-expensive and clean green electricity.
+			  <!--We offers forecasting and optimisation services to optimise
+              trading strategies. Customers use the forecasts to balance their
+              portfolio on the mid-term and optimise the nomination process up
+              to automated decision making in real-time.-->
+            </p>
+            <table class="table text-center text-white mb-5 pb-5">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Offering Description</th>
+                  <th scope="col">Cost Saving</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Basic</td>
+                  <td>Monthly forward and futures contracts plan</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Advanced</td>
+                  <td>Monthly forward and futures contracts plan while maximizing green electricity</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Advanced Green</td>
+                  <td>Maximize transition to green electricity</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-sm-12 col-lg-5 offset-lg-1">
+            <img class="w-100" src="assets/img/solar2.png" alt="Forecasting" />
+          </div>
+        </div>
+
+        <div
+          class="row h-auto justify-content-center align-items-center"
+          id="other-services"
+        >
+          <div class="col-sm-12 col-lg-6">
+            <img class="w-100" src="assets/img/turbine.png" alt="Forecasting" />
+          </div>
+          <div class="col-sm-12 col-lg-4 offset-lg-1">
+            <h4 class="pb-4">Other upcoming Services</h4>
+            <p class="text-left">
+              We plan to offer a variety of services and products to help you make informed decisions, and give you an energy trading experience of another level:
+            </p>
+            <ol class="list-unstyled p-5">
+              <li class="p-2">
+                Short & Long-term load demand forecast
+              </li>
+              <li class="p-2">Day-ahead/intra-day electricity price forecast</li>
+              <li class="p-2">Imbalance load forecast</li>
+              <li class="p-2">Imbalance price forecast</li>
+              <li class="p-2">
+                Energy and investment consultancy
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact-->
+    <section class="contact-section bg-black" id="contact">
+      <div class="container position-relative">
+        <div class="d-flex">
+          <h4 class="text-white p-2 mb-5">Do You Want Customized Solutions</h4>
+          <button
+            class="navbar-toggler navbar-toggler-right arrow text-white position-absolute"
+            type="button"
+            data-toggle="collapse"
+            data-target="#contact-us"
+            aria-controls="contact-us"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-arrow-down fa-3x" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="text-white collapse" id="contact-us">
+          <form
+            class="d-flex flex-column flex-sm-row justify-content-around align-items-center"
+          >
+            <div class="form-group w-25">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control text-center"
+                placeholder="Enter Your Email"
+              />
+            </div>
+            <div class="form-group w-25">
+              <input
+                type="text"
+                name="msg"
+                id="msg"
+                class="form-control text-center"
+                placeholder="Enter Your Message"
+              />
+            </div>
+            <div class="form-group btn btn-success h-25">
+              <input
+                type="submit"
+                name="submit"
+                id="submit"
+                value="Send"
+                class="form-control"
+                style="background: none; border: none; color: #fff;"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="w-100 py-4 bg-secondary"></div>
+
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50">
+      <div class="container">
+        <div class="row h-auto justify-content-center text-white">
+          <div class="col-12 col-sm-3">
+            <h3 class="pb-4">WattSurfer</h3>
+            <p>
+			Stalpaert van der Wieleweg 24,
+			2612 SW Delft
+			</p>
+            <p>info@wattsurfer.com</p>
+            <p>+31 626 85 8135</p>
+          </div>
+          <div class="col-12 col-sm-3">
+            <h3 class="pb-4">
+              Services
+            </h3>
+            <ul class="list-group">
+              <li>
+                <a
+                  href="services.html#forecast-section"
+                  class="js-scroll-trigger"
+                  >Forecasting</a
+                >
+              </li>
+              <li>
+                <a href="services.html#Asset-opt" class="js-scroll-trigger"
+                  >Asset Optimisation</a
+                >
+              </li>
+              <li>
+                <a href="services.html#portfolio" class="js-scroll-trigger"
+                  >Portfolio Optimisation</a
+                >
+              </li>
+              <li>
+                <a href="services.html#other-services" class="js-scroll-trigger"
+                  >Other Services</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-3">
+            <div class="award">
+              <h3>Awards</h3>
+            </div>
+            <hr />
+            <div class="news pt-5">
+              <h3>News</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/other.js"></script>
+  </body>
+</html>

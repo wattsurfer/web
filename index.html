@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Project</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+
+    <!-- Loading Page Style -->
+    <style>
+      .container {
+        width: 87%;
+      }
+      .loader-wrapper {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #242f3f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999999;
+      }
+      .loader {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        border: 4px solid #fff;
+        animation: loader 2s infinite ease;
+      }
+      .loader-inner {
+        vertical-align: top;
+        display: inline-block;
+        width: 100%;
+        background-color: #fff;
+        animation: loader-inner 2s infinite ease-in;
+      }
+      @keyframes loader {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(180deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        75% {
+          transform: rotate(360deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes loader-inner {
+        0% {
+          height: 0%;
+        }
+        25% {
+          height: 0%;
+        }
+        50% {
+          height: 100%;
+        }
+        75% {
+          height: 100%;
+        }
+        100% {
+          height: 0%;
+        }
+      }
+    </style>
+
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+
+    <link rel="stylesheet" href="css/infinite-slider.css" />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body id="page-top" oncontextmenu="return false;">
+
+    <!-- Loading Page-->
+    <div class="loader-wrapper" id="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"
+          ><i class="fa fa-home" aria-hidden="false"></i>
+        </a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html"
+                >Our Technology</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="services.html"
+                >Our Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="about.html"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="text-warning">
+          <a
+            class="dropdown-toggle my-2 my-lg-0 rtl text-warning text-decoration-none"
+            id="dropdown09"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            href="#"
+          >
+            English</a
+          >
+          <div
+            class="dropdown-menu dropdown-menu-sm-right"
+            aria-labelledby="dropdown09"
+          >
+            <a class="dropdown-item" href="#">English (Default)</a>
+            <a class="dropdown-item" href="#">Dutch</a>
+            <a class="dropdown-item" href="#">German</a>
+            <a class="dropdown-item" href="#">French</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Home-->
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center typewriter">
+          <h2 class="text-white-50 mx-auto mt-2 mb-5 txt1">
+            What if you can closely <span>predict future Demand?</span>
+          </h2>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5 txt2">
+            With the uncertainties and the number of variables involved, Humanly
+            it is close to impossible
+          </h2>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5 txt3">
+            But with our AI solution, we are making it Possible
+          </h2>
+          <a class="btn btn-primary js-scroll-trigger txt4" href="#about"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- Tech-->
+    <section class="about-section text-center" id="about">
+      <div class="container">
+        <div class="row h-auto justify-content-center align-items-center">
+          <div
+            class="col-12 col-sm-12 col-md-12 col-lg-12 offset-lg-0 col-xl-2 offset-xl-2 text-center text-white order-2"
+          >
+            <div
+              class="data d-flex flex-column justify-content-center align-items-center"
+            >
+              <h3 class="p-5" style="width: 200px;">Select Data</h3>
+              <div class="dataS d-flex flex-column flex-sm-row">
+                <button type="button" id="today" class="btn btn-primary">
+                  Today
+                </button>
+                <button type="button" id="2days" class="btn btn-primary">
+                  <span class="p-2">2</span>days
+                </button>
+                <button type="button" id="week" class="btn btn-primary">
+                  Week
+                </button>
+              </div>
+              <div class="dataS d-flex flex-column flex-sm-row">
+                <button class="btn btn-info btn-block w-100" id="load">
+                  Load Demand
+                </button>
+                <button class="btn btn-success btn-block" id="entsoe">
+                  Entsoe forecast
+                </button>
+                <button class="btn btn-warning btn-block" id="ourF">
+                  Our forecast
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-white order-1"
+          >
+            <h2>Power Load in the Netherlands</h2>
+            <div class="chart" id="chart"></div>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-start">
+          <div class="col-12 col-xs-12 col-sm-12 h-20"></div>
+          <div
+            class="col-12 col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 text-center text-white"
+          >
+            <h3>Error Rate :</h3>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <button
+              type="button"
+              class="btn btn-info"
+              data-toggle="collapse"
+              data-target="#mean"
+            >
+              Standard Deviation
+            </button>
+            <div id="mean" class="collapse text-center text-white-50">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <span class="p-2">Entsoe: 1019</span>
+                <span class="p-2">Our: 731</span>
+                <span class="p-2">Our improvment: 28%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-3 col-lg-4 col-xl-4">
+            <button
+              class="btn btn-info mx-auto"
+              data-toggle="collapse"
+              data-target="#abs"
+            >
+              Absolute error
+            </button>
+            <div id="abs" class="collapse text-center text-white-50">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <span class="p-2">Entsoe: 762 MW</span>
+                <span class="p-2">Our: 623 MW</span>
+                <span class="p-2">Our improvment: 18%</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column flex-sm-row text-center text-white-50 text-justify"
+          >
+            <small class="p-2 w-50 mx-auto"
+              >Mean squared error calculated over the last one month</small
+			      <!-- Mean squared error calculated over the last 24 hours or for the
+              selected period-->
+            
+            <small class="p-2 w-50 mx-auto"
+              >Cumulative absolute error calculated in MW over the over the last one month</small
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services-->
+    <section class="projects-section bg-light" id="projects">
+      <div class="container overflow-hidden">
+        <div
+          class="row align-items-center justify-content-center no-gutters mb-4 mb-lg-5"
+        >
+          <div
+            class="col-9 offset-sm-4 col-sm-8 col-md-4 offset-md-0 col-lg-4 col-xl-4"
+          >
+            <img
+              class="img-fluid mb-3 mb-lg-0"
+              src="assets/img/Solar.png"
+              alt="Wind Turbine"
+            />
+          </div>
+          <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-4 text-center">
+            <div class="hidden w-75 text-center">
+              <h4 class="font-weight-bold p-3 mb-3">Our Mission</h4>
+              <p class="text-black-50 font-weight-bold text-left">
+                Increase the share of renewable energy through improved power
+                generation and demand forecast.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="featured-text text-center mb-5 hidden">
+          <h4 class="p-3">Why It Matters ?</h4>
+          <p class="text-black-50 mb-0 font-weight-bold text-left">
+            Like other commodities, electricity cannot be stored with the
+            existing infrastructure. And to supply the unplanned power demand,
+            faster but fossil based gas power plants are fired up which
+            increases the greenhouse gas emissions and reduces utilization of
+            solar and wind power resources. Further, untimely power injection
+            and consumption increases grid instability and increases your
+            electricity bill.
+          </p>
+        </div>
+        <hr />
+        <div class="mt-5 text-center text-white">
+          <h4 class="mb-5 text-black overflow-hidden">Accomplishments</h4>
+          <div class="row h-50 justify-content-center align-items-center">
+            <div class="col-7 col-sm-4 col-lg-4 col-xl-4 offset-xl-1 p-2">
+              <a class="card education">
+                <div class="overlay"></div>
+                <div class="circle">
+                  <img src="assets/img/co2.png" alt="co2" />
+                </div>
+                <p>
+                  <span
+                    class="h2 text-warning font-weight-bold"
+                    style="color: #795900 !important;"
+                    >36M <br /></span
+                  >Target CO2 Saving per year
+                </p>
+              </a>
+            </div>
+            <div
+              class="col-7 col-sm-4 offset-sm-2 col-lg-3 offset-lg-1 col-xl-4 offset-xl-1"
+            >
+              <a class="card credentialing">
+                <div class="overlay"></div>
+                <div class="circle">
+                  <img src="assets/img/euro.png" alt="euro" />
+                </div>
+                <p>
+                  <span class="h2 text-success font-weight-bold"
+                    >110M <br
+                  /></span>
+                  Target Euro Saving per year
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testmonial -->
+	 <!-- Testimonial removed here
+	 
+    <section class="testimonial text-center">
+      <div class="container">
+        <div class="heading white-heading">
+          Our Partners
+        </div>
+        <div class="my-5 pb-5">
+          <section class="customer-logos slider">
+            <div class="slide"><img src="assets/img/p5.jpg" alt="logo" /></div>
+            <div class="slide"><img src="assets/img/p5.jpg" alt="logo" /></div>
+            <div class="slide"><img src="assets/img/p5.jpg" alt="logo" /></div>
+            <div class="slide"><img src="assets/img/p5.jpg" alt="logo" /></div>
+            <div class="slide"><img src="assets/img/p5.jpg" alt="logo" /></div>
+            <div class="slide"><img src="assets/img/p5.jpg" alt="logo" /></div>
+            <div class="slide"><img src="assets/img/p5.jpg" alt="logo" /></div>
+            <div class="slide"><img src="assets/img/p5.jpg" alt="logo" /></div>
+          </section>
+        </div>
+		Testmonial -->
+<!-- 
+        <div class="heading white-heading">
+          Testimonial
+        </div>
+        <div
+          id="testimonial4"
+          class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x"
+          data-ride="carousel"
+          data-pause="hover"
+          data-interval="5000"
+          data-duration="2000"
+        >
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active" id="rFirst">
+              <div class="testimonial4_slide">
+                <img
+                  src="https://i.ibb.co/8x9xK4H/team.jpg"
+                  class="img-circle img-responsive"
+                  alt="Avatar"
+                />
+                <p>
+                  We are waiting to reduce your balancing charges, electricity procurement cost and optimize procurement through smart decisions. So contact us soon.
+                </p>
+                <h4>Client 1</h4>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial4_slide">
+                <img
+                  src="https://i.ibb.co/8x9xK4H/team.jpg"
+                  class="img-circle img-responsive"
+                  alt="Avatar"
+                />
+                <p>
+                  We are waiting to reduce your balancing charges, electricity procurement cost and optimize procurement through smart decisions. So contact us soon.
+                </p>
+                <h4>Client 2</h4>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial4_slide">
+                <img
+                  src="https://i.ibb.co/8x9xK4H/team.jpg"
+                  class="img-circle img-responsive"
+                  alt="Avatar"
+                />
+                <p>
+                  We are waiting to reduce your balancing charges, electricity procurement cost and optimize procurement through smart decisions. So contact us soon.
+                </p>
+                <h4>Client 3</h4>
+              </div>
+            </div>
+          </div>
+          
+		  
+		  <a
+            class="carousel-control-prev"
+            href="#testimonial4"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#testimonial4"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </a>
+		  
+        </div>
+      </div>
+	  Footer-->
+    </section>
+    <!-- Contact-->
+    <section class="contact-section bg-black" id="contact">
+      <div class="container position-relative">
+        <div class="d-flex">
+          <h4 class="text-white p-2 mb-5">
+            Do You Want Customized Solutions
+          </h4>
+          <button
+            class="navbar-toggler navbar-toggler-right arrow text-white position-absolute"
+            type="button"
+            data-toggle="collapse"
+            data-target="#contact-us"
+            aria-controls="contact-us"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-arrow-down fa-3x" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="text-white collapse" id="contact-us">
+          <form
+            class="d-flex flex-column flex-sm-row justify-content-around align-items-center"
+          >
+            <div class="form-group w-25">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control text-center"
+                placeholder="Enter Your Email"
+              />
+            </div>
+            <div class="form-group w-25">
+              <input
+                type="text"
+                name="msg"
+                id="msg"
+                class="form-control text-center"
+                placeholder="Enter Your Message"
+              />
+            </div>
+            <div class="form-group btn btn-success h-25">
+              <input
+                type="submit"
+                name="submit"
+                id="submit"
+                value="Send"
+                class="form-control"
+				/>
+				<!--<a href = "mailto: info@wattsurfer.com">Send </a>-->
+              
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="w-100 py-4 bg-secondary"></div>
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50">
+      <div class="container">
+        <div class="row h-auto justify-content-center text-white">
+          <div class="col-12 col-sm-3">
+            <h3 class="pb-4">WattSurfer</h3>
+            <p>
+			Stalpaert van der Wieleweg 24,
+			2612 SW Delft
+			</p>
+            <p>info@wattsurfer.com</p>
+            <p>+31 626 85 8135</p>
+          </div>
+          <div class="col-12 col-sm-3">
+            <h3 class="pb-4">
+              Services
+            </h3>
+            <ul class="list-group">
+              <li>
+                <a href="services.html#forecast-section">Forecasting</a>
+              </li>
+              <li>
+                <a href="services.html#Asset-opt""
+                  >Asset Optimisation</a
+                >
+              </li>
+              <li>
+                <a href="services.html#portfolio"
+                  >Portfolio Optimisation</a
+                >
+              </li>
+              <li>
+                <a href="services.html#other-services"
+                  >Other Services</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-3">
+            <div class="award">
+              <h3>Awards</h3>
+            </div>
+            <hr />
+            <div class="news pt-5">
+              <h3>News</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

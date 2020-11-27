@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Project</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Loading Page Style -->
+    <style>
+      .container {
+        width: 87%;
+      }
+      .loader-wrapper {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #242f3f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999999;
+      }
+      .loader {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        border: 4px solid #fff;
+        animation: loader 2s infinite ease;
+      }
+      .loader-inner {
+        vertical-align: top;
+        display: inline-block;
+        width: 100%;
+        background-color: #fff;
+        animation: loader-inner 2s infinite ease-in;
+      }
+      @keyframes loader {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(180deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        75% {
+          transform: rotate(360deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes loader-inner {
+        0% {
+          height: 0%;
+        }
+        25% {
+          height: 0%;
+        }
+        50% {
+          height: 100%;
+        }
+        75% {
+          height: 100%;
+        }
+        100% {
+          height: 0%;
+        }
+      }
+    </style>
+
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body id="page-top" oncontextmenu="return false;">
+    <!-- loading Page-->
+    <div class="loader-wrapper" id="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html"
+          ><i class="fa fa-home" aria-hidden="false"></i>
+        </a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html"
+                >Our Technology</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="services.html"
+                >Our Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="about.html"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a
+            class="dropdown-toggle my-2 my-lg-0 rtl text-warning text-decoration-none"
+            id="dropdown09"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            href="#"
+          >
+            English</a
+          >
+          <div
+            class="dropdown-menu dropdown-menu-sm-right"
+            aria-labelledby="dropdown09"
+          >
+            <a class="dropdown-item" href="#">English (Default)</a>
+            <a class="dropdown-item" href="#">Dutch</a>
+            <a class="dropdown-item" href="#">German</a>
+            <a class="dropdown-item" href="#">French</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Tech-->
+    <section class="offer-forecast text-center text-white" id="portfolio">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-sm-12 col-md-6 col-lg-6 mb-5">
+            <img class="w-100" src="assets/img/team.png" alt="Forecasting" />
+          </div>
+          <div class="col-sm-12 col-md-5 col-lg-4 offset-lg-1 text-center">
+            <h1 class="pb-4 font-weight-bold">Who are we ?</h1>
+            <p>
+              Since inception in 2020, WattSurfer is dedicated to drive the techological limits in power demand forecasting and renewable power generation forecasting to enable portfolio optimization and hence, to drive down the cost. WattSurfer aims to maximize the adoption of renewable electricity through minimizing uncertainity and helping to maintain the grid stability through the power of artificial intelligence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact-->
+    <section class="contact-section bg-black" id="contact">
+      <div class="container position-relative">
+        <div class="d-flex">
+          <h4 class="text-white p-2 mb-5">Do You Want Customized Solutions</h4>
+          <button
+            class="navbar-toggler navbar-toggler-right arrow text-white position-absolute"
+            type="button"
+            data-toggle="collapse"
+            data-target="#contact-us"
+            aria-controls="contact-us"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-arrow-down fa-3x" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="text-white collapse" id="contact-us">
+          <form
+            class="d-flex flex-column flex-sm-row justify-content-around align-items-center"
+          >
+            <div class="form-group w-25">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control text-center"
+                placeholder="Enter Your Email"
+              />
+            </div>
+            <div class="form-group w-25">
+              <input
+                type="text"
+                name="msg"
+                id="msg"
+                class="form-control text-center"
+                placeholder="Enter Your Message"
+              />
+            </div>
+            <div class="form-group btn btn-success h-25">
+              <input
+                type="submit"
+                name="submit"
+                id="submit"
+                value="Send"
+                class="form-control"
+                style="background: none; border: none; color: #fff;"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="w-100 py-4 bg-secondary"></div>
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50">
+      <div class="container">
+        <div class="row h-auto justify-content-center text-white">
+          <div class="col-12 col-sm-3">
+            <h3 class="pb-4">WattSurfer</h3>
+            <p>
+			Stalpaert van der Wieleweg 24,
+			2612 SW Delft
+			</p>
+            <p>info@wattsurfer.com</p>
+            <p>+31 626 85 8135</p>
+          </div>
+          <div class="col-12 col-sm-3">
+            <h3 class="pb-4">
+              Services
+            </h3>
+            <ul class="list-group">
+              <li>
+                <a href="services.html#forecast-section">Forecasting</a>
+              </li>
+              <li>
+                <a href="services.html#Asset-opt">Asset Optimisation</a>
+              </li>
+              <li>
+                <a href="services.html#portfolio">Portfolio Optimisation</a>
+              </li>
+              <li>
+                <a href="services.html#other-services">Other Services</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-3">
+            <div class="award">
+              <h3>Awards</h3>
+            </div>
+            <hr />
+            <div class="news pt-5">
+              <h3>News</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/other.js"></script>
+  </body>
+</html>
