@@ -854,6 +854,20 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
 
+// Adarsh Checking api
+const api_url = "https://wattsurfer.herokuapp.com/api/v1/data"
+
+ var getting_data = async () => {
+
+     var data = await fetch(api_url)
+     console.log(data._items)
+  
+}
+
+getting_data()
+
+
+
 // *************************** One Day ******************************* //
 $("#today").click(function () {
   chart.updateOptions({
