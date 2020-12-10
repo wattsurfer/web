@@ -1,3 +1,6 @@
+
+var res;
+
 (function ($) {
   $(window).on("load", function () {
     $("#loader-wrapper").hide();
@@ -54,9 +57,17 @@
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
+
+
+  
+  
 })(jQuery); // End of use strict
 
 //  starts chart
+// setTimeout(() => {
+//   console.log(res)
+// }, 2000)
+
 var options = {
   series: [
     {
@@ -854,17 +865,65 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
 
-// Adarsh Checking api
-const api_url = "https://wattsurfer.herokuapp.com/api/v1/data"
+// ****************Adarsh Checking api****************
 
- var getting_data = async () => {
+//const api_url = "https://wattsurfer.herokuapp.com/api/v1/data"
 
-     var data = await fetch(api_url)
-     console.log(data._items)
+//  var getting_data = async () => {
+
+//      var data = await fetch(api_url)
+//      console.log(data)
   
+// }
+
+// getting_data()
+
+var fetchedLoadDemand = []
+var fetchedWeatherForecast = []
+var fetchedTimeStamp = []
+
+var getResult = async () => {
+  const api_url = "https://wattsurfer.herokuapp.com/api/v1/data?page=1&limit=100"
+
+  var { _items } = await $.ajax({
+    method: 'GET',
+    url: api_url,
+  })
+
+  res = _items
+
+  console.log(res)
+
+  for(var i=0 ; i<res.length ; i++) {
+    fetchedLoadDemand.push(res[i].load_demand)
+    fetchedWeatherForecast.push(res[i].wattsurfer_forecast)
+    fetchedTimeStamp.push(res[i].timestamp.substr(5, 17))
+  }
+
+  console.log(fetchedLoadDemand)
+  console.log(fetchedWeatherForecast)
+  console.log(fetchedTimeStamp)
+
+  chart.updateOptions({
+    xaxis: {
+      categories: fetchedTimeStamp
+    },
+    series: [
+      {
+        name: "Load Demand",
+        data: fetchedLoadDemand
+      },
+      {
+        name: "Our forecast",
+        data: fetchedWeatherForecast
+      }
+    ]
+  })
 }
 
-getting_data()
+getResult()
+
+// **** End of Adarsh Work *******************
 
 
 
