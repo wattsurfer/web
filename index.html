@@ -79,6 +79,10 @@
       }
     </style>
 
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
     <!-- Font Awesome icons (free version)-->
     <script
       src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
@@ -101,7 +105,24 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
+
+    <!-- Adding DatePicker on ui -->
+
+
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+
+    <!-- <script>
+      $( function() {
+        $( "#date" ).datepicker();
+      } );
+    </script> -->
+
   </head>
+
+
   <body id="page-top" oncontextmenu="return false;">
 
     <!-- Loading Page-->
@@ -174,6 +195,9 @@
       </div>
     </nav>
     <!-- Home-->
+
+    
+
     <header class="masthead">
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center typewriter">
@@ -192,7 +216,12 @@
           >
         </div>
       </div>
+
+      
     </header>
+
+    
+
     <!-- Tech-->
     <section class="about-section text-center" id="about">
       <div class="container">
@@ -200,6 +229,7 @@
           <div
             class="col-12 col-sm-12 col-md-12 col-lg-12 offset-lg-0 col-xl-2 offset-xl-2 text-center text-white order-2"
           >
+    
             <div
               class="data d-flex flex-column justify-content-center align-items-center"
             >
@@ -215,7 +245,7 @@
                   Week
                 </button>
               </div>
-              <div class="dataS d-flex flex-column flex-sm-row">
+              <!-- <div class="dataS d-flex flex-column flex-sm-row">
                 <button class="btn btn-info btn-block w-100" id="load">
                   Load Demand
                 </button>
@@ -225,16 +255,31 @@
                 <button class="btn btn-warning btn-block" id="ourF">
                   Our forecast
                 </button>
-              </div>
+              </div> -->
             </div>
+
+
           </div>
           <div
             class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-white order-1"
           >
             <h2>Power Load in the Netherlands</h2>
             <div class="chart" id="chart"></div>
+
+            <!-- DatePicker -->
+
+            <!-- <p>Date: <input type="text" id="date" /></p> -->
+
+            <form>
+              <label for="date1">Date:</label>
+              <input type="date" id="date" name="date">
+              <input type="submit">
+            </form>
+            
           </div>
         </div>
+
+          
         <div class="row justify-content-center align-items-start">
           <div class="col-12 col-xs-12 col-sm-12 h-20"></div>
           <div
